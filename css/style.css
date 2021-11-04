@@ -1,0 +1,24 @@
+/* палитра цветов 
+заголовки-#212121
+основная масса текста-#757575
+адресс и заголовок героя #FFFFFF
+активные сыллки-#2196F3
+почта и номер в футере- rgba(255, 255, 255, 0.6);
+
+шрифты- 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+*/
+
+.header {
+  background-color: #ffffff;
+}
+
+.logo {
+  color: #2196f3;
+}
+.hero {
+  background-color: #2f303a;
+}
