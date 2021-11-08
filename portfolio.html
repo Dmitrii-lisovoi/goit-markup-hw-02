@@ -12,113 +12,117 @@
 </head>
 <body>
         <!-- шапка сайта -->
-        <header >
-            <nav>
-                <a  href="./index.html"> WebStudio </a>
-                <ul>
-                    <li>
-                        <a  href="./index.html">Студия</a>
-                    </li>
-                    <li>
-                        <a  href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li>
-                        <a  href="">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <a  href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a  href="tel:+380961111111">+38 096 111 11 11</a>
-        </header>
+    <header class="header">
+        <nav class="header-nav">
+            <a class="header-logo link" href="./index.html">Web<span class="second-logo">Studio</span> </a>
+            <ul class="header-list list">
+                <li>
+                    <a class="header-link link" href="./index.html">Студия</a>
+                </li>
+                <li>
+                    <a class="header-link link current" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li>
+                    <a class="header-link link" href="">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="list">
+            <li><a class="header-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="header-tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
+    </header>
         <main>
             <!-- кнопки проектов -->
             <h1 aria-label="Портфолио"></h1>
-            <section>
-            <ul >
+            <section class="main">
+            <ul class="main-list-btn list" >
                 <li>
-                    <button type="button">Все</button>
+                    <button class="main-btn" type="button">Все</button>
                 </li>
                 <li>
-                    <button type="button">Веб-сайты</button>
+                    <button class="main-btn" type="button">Веб-сайты</button>
                 </li>
                 <li>
-                    <button type="button">Приложения</button>
+                    <button class="main-btn" type="button">Приложения</button>
                 </li>
                 <li>
-                    <button type="button">Дизайн</button>
+                    <button class="main-btn" type="button">Дизайн</button>
                 </li>
                 <li>
-                    <button type="button">Маркетинг</button>
+                    <button class="main-btn" type="button">Маркетинг</button>
                 </li>
             </ul>
             <!-- проекты -->
             <h2 aria-label="Проекты"></h2>
-            <ul ">
+            <ul class="main-projeckt list">
                 <li>
                     <img src="./images/img-prod1.jpg" alt="сайт на ноутбуке" width: 370; height: 294;>
-                    <h3>Технокряк</h3>
-                    <p>Веб-сайт</p>
+                    <h3 class="projeckt-title">Технокряк</h3>
+                    <p class="projeckt-text">Веб-сайт</p>
                 </li>
                 <li>
                     <img src="./images/img-prod2.jpg" alt="дизайн постера" width: 370; height: 294;>
-                    <h3>Постер <span lang="en">New Orlean vs Golden Star</span></h3>
-                    <p>Дизайн</p>
+                    <h3 class="projeckt-title">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
+                    <p class="projeckt-text">Дизайн</p>
                 </li>
                 <li>
                     <img src="./images/img-prod3.jpg" alt="логотип ресторана" width: 370; height: 294;>
-                    <h3>Ресторан <span lang="en">Seafood</span></h3>
-                    <p>Приложение</p>
+                    <h3 class="projeckt-title">Ресторан <span lang="en">Seafood</span></h3>
+                    <p class="projeckt-text">Приложение</p>
                 </li>
                 <li>
                     <img src="./images/img-prod4.jpg" alt="наушники" width: 370; height: 294;>
-                    <h3>Проект <span>Prime</span></h3>
-                    <p>Маркетинг</p>
+                    <h3 class="projeckt-title">Проект <span>Prime</span></h3>
+                    <p class="projeckt-text">Маркетинг</p>
                 </li>
                 <li>
                     <img src="./images/img-prod5.jpg" alt="две коробки" width: 370; height: 294;>
-                    <h3>Проект <span lang="en">Boxes</span></h3>
-                    <p>Приложение</p>
+                    <h3 class="projeckt-title">Проект <span lang="en">Boxes</span></h3>
+                    <p class="projeckt-text">Приложение</p>
                 </li>
-                <li> class="header-link"
+                <li> 
                     <img src="./images/img-prod6.jpg" alt="изображение сайта на мониторе" width: 370; height: 294;>
-                    <h3><span lang="en">Inspiration has no Borders</span></h3>
-                    <p>Веб-сайт</p>
+                    <h3 class="projeckt-title"><span lang="en">Inspiration has no Borders</span></h3>
+                    <p class="projeckt-text">Веб-сайт</p>
                 </li>
                 <li>
                     <img src="./images/img-prod7.jpg" alt="журнал на сером фоне" width: 370; height: 294;>
-                    <h3>Издание <span lang="en">Limited Edition</span></h3>
-                    <p>Дизайн</p>
+                    <h3 class="projeckt-title">Издание <span lang="en">Limited Edition</span></h3>
+                    <p class="projeckt-text">Дизайн</p>
                 </li>
                 <li>
                     <img src="./images/img-prod8.jpg" alt="логотип проекта" width: 370; height: 294;>
-                    <h3>Проект <span lang="en">LAB</span></h3>
-                    <p>Маркетинг</p>
+                    <h3 class="projeckt-title">Проект <span lang="en">LAB</span></h3>
+                    <p class="projeckt-text">Маркетинг</p>
                 </li>
                 <li>
                     <img src="./images/img-prod9.jpg" alt="приложение на ноутбуке" width: 370; height: 294;>
-                    <h3><span lang="en">Growing Business</span></h3>
-                    <p>Приложение</p>
+                    <h3 class="projeckt-title"><span lang="en">Growing Business</span></h3>
+                    <p class="projeckt-text">Приложение</p>
                 </li>
             </ul>
             </section>
         </main>
         <!-- футер -->
         <footer>
-            <a  href="/index.html">WebStudio</a>
-            <address>
-                <ul >
-                    <li>
-                        <a  href="https://goo.gl/maps/xMHKZM8JpJUc79RT8" target="_blank">г. Киев, пр-т Леси Украинки, 26</a>
-                    </li>
-                    <li>
-                        <a  href="mailto:info@example.com">info@example.com</a>
-                    </li>
-                    <li>
-                        <a  href="tel:+380991111111">+38 099 111 11 11</a>
-                    </li>
-                </ul>
-            </address>
-        </footer>
+    <footer class="footer">
+        <a class="footer-logo link" href="./index.html">Web<span class="footer-second-logo">Studio</span> </a>
+        <address>
+            <ul class="footer-list list">
+                <li>
+                    <a class="footer-link link" href="https://goo.gl/maps/xMHKZM8JpJUc79RT8" target="_blank">г. Киев, пр-т
+                        Леси Украинки, 26</a>
+                </li>
+                <li>
+                    <a class="footer-mail link" href="mailto:info@example.com">info@example.com</a>
+                </li>
+                <li>
+                    <a class="footer-tel link" href="tel:+380991111111">+38 099 111 11 11</a>
+                </li>
+            </ul>
+        </address>
+    </footer>
         
     
 </body>
