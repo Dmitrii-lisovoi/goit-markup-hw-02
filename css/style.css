@@ -1,10 +1,18 @@
-/* палитра цветов 
-заголовки-#212121
-основная масса текста-#757575
-адресс и заголовок героя #FFFFFF
-активные сыллки-#2196F3
-почта и номер в футере- rgba(255, 255, 255, 0.6);
+:root {
+}
+body {
+  font-family: "Roboto";
+  font-style: normal;
+}
 
+.list {
+  list-style: none;
+}
 
-
-
+.link {
+  color: #212121;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
