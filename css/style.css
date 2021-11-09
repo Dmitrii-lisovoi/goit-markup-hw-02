@@ -9,6 +9,7 @@
   --main-background-color: #e5e5e5;
   --team-background-color: #f5f4fa;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
@@ -23,7 +24,7 @@ body {
 /* -------------------------------------------стилизация хедера------------------------------------- */
 .header-logo {
   font-family: Raleway;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -31,7 +32,7 @@ body {
 }
 .second-logo {
   font-family: Raleway;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -39,6 +40,7 @@ body {
 }
 
 .header-link {
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -46,6 +48,7 @@ body {
   color: var(--second-tittle-color);
 }
 .header-tel {
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -54,6 +57,7 @@ body {
 }
 
 .header-mail {
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -91,7 +95,7 @@ body {
 }
 
 .hero-btn {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   display: flex;
@@ -107,9 +111,9 @@ body {
 
 /* --------------------------------------------секция преимуществ----------------------------------------- */
 .advantages-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-tittle-color);
@@ -122,7 +126,7 @@ body {
 }
 /* --------------------------------------------секция we  doing ------------------------------------------------*/
 .we-doing-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -134,7 +138,7 @@ body {
   background-color: #f5f4fa;
 }
 .team-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -164,7 +168,7 @@ body {
 }
 .footer-logo {
   font-family: Raleway;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -172,13 +176,15 @@ body {
 }
 .footer-second-logo {
   font-family: Raleway;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--first-background-color);
 }
+
 .footer-link {
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -193,12 +199,14 @@ body {
   color: var(--accent-color);
 }
 .footer-mail {
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--adress-color);
 }
 .footer-tel {
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -213,8 +221,11 @@ body {
   color: var(--first-background-color);
   background-color: var(--accent-color);
 }
-/* --------------------------------оформление фильтром-------------------------- */
+/* --------------------------------оформление фильтров-------------------------- */
 .main-btn {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
@@ -225,6 +236,9 @@ body {
   cursor: pointer;
 }
 .main-btn:active {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
