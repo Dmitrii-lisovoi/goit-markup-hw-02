@@ -15,13 +15,40 @@ body {
   background-color: #ffffff;
   font-style: normal;
 }
-.list {
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
+
 .link {
   text-decoration: none;
 }
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
 /* -------------------------------------------стилизация хедера------------------------------------- */
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header-logo {
   font-family: Raleway;
   font-weight: 700;
@@ -29,7 +56,9 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  margin-right: 93px;
 }
+
 .second-logo {
   font-family: Raleway;
   font-weight: 700;
@@ -37,6 +66,35 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-contacts-item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-link {
@@ -47,6 +105,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--second-tittle-color);
 }
+
 .header-tel {
   font-style: normal;
   font-weight: 500;
@@ -69,21 +128,31 @@ body {
 .header-link:focus {
   color: var(--accent-color);
 }
+
 .header-mail:hover,
 .header-mail:focus {
   color: var(--accent-color);
 }
+
 .header-tel:hover,
 .header-tel:focus {
   color: var(--accent-color);
 }
+
 .current {
   color: var(--accent-color);
 }
+
 /* ---------------------------------------------стилизация героя----------------------------------- */
 .hero {
   background-color: var(--hero-background-color);
+  margin-bottom: 94px;
 }
+
+.hero-container {
+  padding: 200px;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -92,12 +161,17 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  width: 696px;
+  height: 120px;
+  margin: auto;
+  margin-bottom: 30px;
 }
 
 .hero-btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  justify-content: center;
   display: flex;
   align-items: center;
   text-align: center;
@@ -107,9 +181,27 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  width: 200px;
+  height: 50px;
+  border: 0px;
+  margin: auto;
 }
 
 /* --------------------------------------------секция преимуществ----------------------------------------- */
+
+.advantages {
+  margin: auto;
+  margin-bottom: 94px;
+}
+
+.advantages-list {
+  display: flex;
+}
+
+.advantages-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .advantages-title {
   font-weight: 700;
   font-size: 14px;
@@ -117,13 +209,18 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-tittle-color);
+  margin-bottom: 10px;
 }
+
 .advantages-text {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--first-text-color);
+  width: 270px;
+  height: 70px;
 }
+
 /* --------------------------------------------секция we  doing ------------------------------------------------*/
 .we-doing-title {
   font-weight: 700;
@@ -133,10 +230,12 @@ body {
   letter-spacing: 0.03em;
   color: var(--second-tittle-color);
 }
+
 /* ---------------------------------------------секция команда------------------------------------------------------ */
 .team {
   background-color: #f5f4fa;
 }
+
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -145,9 +244,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--second-tittle-color);
 }
+
 .team-item {
   background-color: #ffffff;
 }
+
 .team-item-title {
   font-weight: 500;
   font-size: 16px;
@@ -156,6 +257,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--second-tittle-color);
 }
+
 .team-item-text {
   font-size: 16px;
   line-height: 1.18;
@@ -163,10 +265,13 @@ body {
   letter-spacing: 0.03em;
   color: var(--first-text-color);
 }
+
 /* -------------------------------------------стилизация футера---------------------------------------- */
+
 .footer {
   background-color: #2f303a;
 }
+
 .footer-logo {
   font-family: Raleway;
   font-weight: 700;
@@ -175,6 +280,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
+
 .footer-second-logo {
   font-family: Raleway;
   font-weight: 700;
@@ -191,14 +297,17 @@ body {
   letter-spacing: 0.03em;
   color: var(--first-background-color);
 }
+
 .footer-mail:hover,
 .footer-mail:focus {
   color: var(--accent-color);
 }
+
 .footer-tel:hover,
 .footer-tel:focus {
   color: var(--accent-color);
 }
+
 .footer-mail {
   font-style: normal;
   font-size: 14px;
@@ -206,6 +315,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--adress-color);
 }
+
 .footer-tel {
   font-style: normal;
   font-size: 14px;
@@ -213,17 +323,23 @@ body {
   letter-spacing: 0.03em;
   color: var(--adress-color);
 }
+
 /* ------------------------------------оформление страницы портфолио------------------------------- */
+
 .main {
   background-color: #ffffff;
 }
+
 .main-btn:hover,
 .main-btn:focus {
   color: var(--first-background-color);
   background-color: var(--accent-color);
 }
+
 /* --------------------------------оформление фильтров-------------------------- */
+
 .main-btn {
+  border: 0px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -231,12 +347,13 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  cursor: pointer;
   background-color: #f5f4fa;
   border-radius: 4px;
   cursor: pointer;
 }
+
 .main-btn:active {
+  border: 0px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -252,12 +369,14 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
+
 .projeckt-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--second-tittle-color);
 }
+
 .projeckt-text {
   font-size: 16px;
   line-height: 1.87;
