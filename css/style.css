@@ -71,8 +71,8 @@ ul {
 .header-container {
   display: flex;
   align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  width: 1200px;
+  height: 80px;
 }
 
 .header-nav {
@@ -104,6 +104,8 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-tittle-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-tel {
@@ -113,6 +115,8 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--first-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-mail {
@@ -122,6 +126,8 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--first-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-link:hover,
@@ -200,6 +206,7 @@ ul {
 
 .advantages-item:not(:last-child) {
   margin-right: 30px;
+  height: 101px;
 }
 
 .advantages-title {
@@ -222,6 +229,11 @@ ul {
 }
 
 /* --------------------------------------------секция we  doing ------------------------------------------------*/
+
+.we-doing {
+  margin-bottom: 94px;
+}
+
 .we-doing-title {
   font-weight: 700;
   font-size: 36px;
@@ -229,9 +241,19 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-tittle-color);
+  margin-bottom: 50px;
+}
+
+.we-doing-list {
+  display: flex;
+}
+
+.we-doing-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* ---------------------------------------------секция команда------------------------------------------------------ */
+
 .team {
   background-color: #f5f4fa;
 }
@@ -243,10 +265,30 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-tittle-color);
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 94px;
 }
 
 .team-item {
   background-color: #ffffff;
+  margin-right: 30px;
+  width: 270px;
+  height: 368px;
+  background: #ffffff;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-item:last-child {
+  margin-right: 0px;
 }
 
 .team-item-title {
@@ -256,6 +298,8 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-tittle-color);
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team-item-text {
@@ -264,6 +308,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--first-text-color);
+  padding-bottom: 30px;
 }
 
 /* -------------------------------------------стилизация футера---------------------------------------- */
@@ -273,12 +318,16 @@ ul {
 }
 
 .footer-logo {
+  display: block;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  padding-top: 60px;
+  margin-bottom: 20px;
+  width: 135px;
 }
 
 .footer-second-logo {
@@ -296,6 +345,15 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--first-background-color);
+}
+
+.footer-item {
+  margin-bottom: 9px;
+}
+
+.footer-item:last-child {
+  margin-bottom: 0px;
+  padding-bottom: 60px;
 }
 
 .footer-mail:hover,
@@ -330,6 +388,10 @@ ul {
   background-color: #ffffff;
 }
 
+.portfolio-header {
+  margin-bottom: 94px;
+}
+
 .main-btn:hover,
 .main-btn:focus {
   color: var(--first-background-color);
@@ -337,6 +399,20 @@ ul {
 }
 
 /* --------------------------------оформление фильтров-------------------------- */
+
+.main-list-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+  width: 615px;
+  height: 64px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-item-btn:not(:last-child) {
+  margin-right: 9px;
+}
 
 .main-btn {
   border: 0px;
@@ -350,6 +426,8 @@ ul {
   background-color: #f5f4fa;
   border-radius: 4px;
   cursor: pointer;
+  min-width: 73px;
+  min-height: 38px;
 }
 
 .main-btn:active {
@@ -370,11 +448,39 @@ ul {
   cursor: pointer;
 }
 
+.main-projeckt-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 94px;
+}
+
+.projeckt-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 370px;
+  height: 404px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.projeckt-item:nth-child(3n + 3) {
+  margin-right: 0px;
+}
+
+.projeckt-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
 .projeckt-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--second-tittle-color);
+  margin-top: 20px;
+  margin-bottom: 4px;
+  padding-left: 24px;
 }
 
 .projeckt-text {
@@ -382,4 +488,6 @@ ul {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--first-text-color);
+  padding-left: 24px;
+  padding-bottom: 20px;
 }
