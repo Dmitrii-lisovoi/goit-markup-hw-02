@@ -1,3 +1,13 @@
+/* 
+1.Задать падинги в герое только вверху и внизу +
+2.Заменить марджины секций на падинги
+3.В разделе команды исправить h3 и p +
+4.добавить падинг для футера (Верх и низ) +
+5.На странице портфолио исправить размеры кнопок
+6.на странице портфолио в карточках исправить h3 и p +`
+
+ */
+
 :root {
   --first-title-color: #ffffff;
   --second-tittle-color: #212121;
@@ -152,11 +162,11 @@ ul {
 /* ---------------------------------------------стилизация героя----------------------------------- */
 .hero {
   background-color: var(--hero-background-color);
-  margin-bottom: 94px;
 }
 
 .hero-container {
-  padding: 200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -197,7 +207,8 @@ ul {
 
 .advantages {
   margin: auto;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .advantages-list {
@@ -231,7 +242,7 @@ ul {
 /* --------------------------------------------секция we  doing ------------------------------------------------*/
 
 .we-doing {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .we-doing-title {
@@ -256,6 +267,8 @@ ul {
 
 .team {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-title {
@@ -265,14 +278,12 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-tittle-color);
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
 .team-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 94px;
 }
 
 .team-item {
@@ -291,6 +302,11 @@ ul {
   margin-right: 0px;
 }
 
+.team-item-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-item-title {
   font-weight: 500;
   font-size: 16px;
@@ -298,7 +314,6 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-tittle-color);
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -308,13 +323,14 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--first-text-color);
-  padding-bottom: 30px;
 }
 
 /* -------------------------------------------стилизация футера---------------------------------------- */
 
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -325,7 +341,6 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  padding-top: 60px;
   margin-bottom: 20px;
   width: 135px;
 }
@@ -353,7 +368,6 @@ ul {
 
 .footer-item:last-child {
   margin-bottom: 0px;
-  padding-bottom: 60px;
 }
 
 .footer-mail:hover,
@@ -386,10 +400,8 @@ ul {
 
 .main {
   background-color: #ffffff;
-}
-
-.portfolio-header {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .main-btn:hover,
@@ -426,8 +438,6 @@ ul {
   background-color: #f5f4fa;
   border-radius: 4px;
   cursor: pointer;
-  min-width: 73px;
-  min-height: 38px;
 }
 
 .main-btn:active {
@@ -452,7 +462,6 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 94px;
 }
 
 .projeckt-item {
@@ -473,14 +482,19 @@ ul {
   margin-bottom: 0;
 }
 
+.projeckt-item-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
 .projeckt-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--second-tittle-color);
-  margin-top: 20px;
   margin-bottom: 4px;
-  padding-left: 24px;
 }
 
 .projeckt-text {
@@ -488,6 +502,4 @@ ul {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--first-text-color);
-  padding-left: 24px;
-  padding-bottom: 20px;
 }
